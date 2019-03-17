@@ -6,12 +6,15 @@ for i in range(3):
     else:
         print(i)
 
-# try:
-#     1 / 0
-# except ZeroDivisionError as e:
-#     print(11)
-# finally:
-#     print(111)
+try:
+    1 / 0
+except ZeroDivisionError as e:
+    print(11)
+    pass
+else:
+    print("没有抛异常")
+finally:
+    print(111)
 
 # 字符串
 name = 'ada lovelace'
@@ -66,3 +69,5 @@ for key, value in dictionary.items():
 del dictionary['other']
 
 print(int('18'))
+
+print('1234' in 'dskh1234dvj')
