@@ -5,19 +5,19 @@ import json
 #     print(contents)
 
 # mode = r读w写a附加r+读写w+读写a+读写附加
-file = open('/Users/kaze/project/py-narai/venv/test/class_test.py', mode='r')
-# for line in file:
-#     print(line.rstrip())
+with open('/Users/kaze/project/py-narai/venv/test/class_test.py', mode='r') as file:
+    for line in file:
+        print(line.rstrip())
 
-file = open('/Users/kaze/project/py-narai/venv/write.txt', mode='w')
-file.write("Hello World\n")
+with open('/Users/kaze/project/py-narai/venv/write.txt', mode='w') as file:
+    file.write("Hello World\n")
 
-file = open('/Users/kaze/project/py-narai/venv/write.txt', mode='a')
-file.write("Hello World")
+with open('/Users/kaze/project/py-narai/venv/write.txt', mode='a') as file:
+    file.write("Hello World")
 
 # file = open('/Users/kaze/project/py-narai/venv/username.txt', mode='w')
 # json.dump('name', file)
 
-file = open('/Users/kaze/project/py-narai/venv/username.txt', mode='r')
-name = json.load(file)
-print(name)
+with open('/Users/kaze/project/py-narai/venv/username.txt', mode='r') as file:
+    name = json.load(file)
+    print(name)
