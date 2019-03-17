@@ -4,7 +4,7 @@ import json
 #     contents = file_object.read()
 #     print(contents)
 
-# mode = r读w写a附加r+读写
+# mode = r读w写a附加r+读写w+读写a+读写附加
 file = open('/Users/kaze/project/py-narai/venv/test/class_test.py', mode='r')
 # for line in file:
 #     print(line.rstrip())
