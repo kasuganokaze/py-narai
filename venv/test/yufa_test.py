@@ -64,6 +64,7 @@ dictionary = {
 }
 dictionary.keys()
 dictionary.values()
+print(dictionary.__contains__("age"))
 for key, value in dictionary.items():
     print(key + str(value))
 del dictionary['other']
@@ -71,3 +72,4 @@ del dictionary['other']
 print(int('18'))
 
 print('1234' in 'dskh1234dvj')
+

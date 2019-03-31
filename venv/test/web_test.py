@@ -1,6 +1,10 @@
 import requests
 from bs4 import BeautifulSoup
 import json
+import time
+import _thread
+import threading
+import queue
 
 # url = "https://tieba.baidu.com/f?kw=%E9%9B%80%E9%AD%82&fr=index&fp=0&ie=utf-8"
 # page = requests.get(url)
@@ -16,11 +20,10 @@ import json
 # print(result_json['data'])
 
 
-url = 'https://detail.tmall.com/item.htm?id=579794586729&skuId=3856455121135'
+url = 'https://item.jd.com/40433045838.html'
 page = requests.get(url)
 print(page.text)
 soup = BeautifulSoup(page.content, 'html.parser')
 ass = soup.find_all('section', class_='config-list')
 for a in ass:
     pass
-
