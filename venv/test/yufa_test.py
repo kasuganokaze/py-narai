@@ -73,3 +73,7 @@ print(int('18'))
 
 print('1234' in 'dskh1234dvj')
 
+array1 = [1, 2, 3, 4]
+array2 = [5, 6]
+array1.extend(array2)
+print(array1)
